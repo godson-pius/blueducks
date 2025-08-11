@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Services &mdash; BlueDucks Ltd</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700,900">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    .service-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+    
+    .service-icon {
+      font-size: 3rem;
+      color: #007bff;
+      margin-bottom: 20px;
+    }
+    
+    .innovation-bg {
+      background-image: url('images/office.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: white;
+      position: relative;
+    }
+
+    .innovation-bg::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 1;
+    }
+
+    .innovation-bg .container {
+      position: relative;
+      z-index: 2;
+    }
+
+    .tech-badge {
+      background: #f8f9fa;
+      padding: 5px 12px;
+      border-radius: 15px;
+      font-size: 0.9rem;
+      margin: 3px;
+      display: inline-block;
+    }
+
+    .process-step {
+      border-left: 3px solid #007bff;
+      padding-left: 20px;
+      margin-bottom: 30px;
+    }
+
+    .step-number {
+      background: #007bff;
+      color: white;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      margin-left: -32px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="site-wrap">
+
+    <div class="site-navbar-wrap">
+      <div class="site-navbar-top">
+        <div class="container py-3">
+          <div class="row align-items-center">
+            <div class="col-6">
+              <a class="p-2 pl-0"><span class="icon-twitter"></span></a>
+              <a class="p-2 pl-0"><span class="icon-facebook"></span></a>
+              <a class="p-2 pl-0"><span class="icon-linkedin"></span></a>
+              <a class="p-2 pl-0"><span class="icon-instagram"></span></a>
+            </div>
+            <div class="col-6">
+              <div class="d-flex ml-auto">
+                <a href="#" class="d-flex align-items-center ml-auto mr-4">
+                  <span class="icon-envelope mr-2"></span>
+                  <span class="d-none d-md-inline-block">blueducksltd@gmail.com</span>
+                </a>
+                <a href="#" class="d-flex align-items-center">
+                  <span class="icon-phone mr-2"></span>
+                  <span class="d-none d-md-inline-block">+2348062704494</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-navbar">
+        <div class="container py-1">
+          <div class="row align-items-center">
+
+            <div class="col-2">
+              <h1 class="mb-0 site-logo d-flex align-items-center">
+                <a class="d-flex align-items-center text-decoration-none">
+                  <img src="/images/logolong.png" alt="BlueDucks Limited Logo" class="logo-img" style="
+                        height: 45px;
+                        width: auto;
+                        flex-shrink: 0;
+                      " />
+                </a>
+              </h1>
+            </div>
+
+            <div class="col-10">
+              <nav class="site-navigation text-right" role="navigation">
+                <div class="container">
+                  <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
+
+                  <ul class="site-menu js-clone-nav d-none d-lg-block">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li class="active"><a>Services</a></li>
+                    <li><a>Academy</a></li>
+                    <li><a>Booking</a></li>
+                    <li><a>Contact</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="site-blocks-cover overlay inner-page" style="background-image: url(images/couple.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-10">
+            <span class="sub-text">Excellence • Innovation • Growth</span>
+            <h1>Our Services</h1>
+            <p class="lead text-white">Comprehensive Technology Solutions & Professional Development Programs</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services Overview -->
+    <div class="site-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center mb-5">
+            <span class="sub-title">What We Offer</span>
+            <h2 class="font-weight-bold text-black mb-4">Dual-Track Excellence</h2>
+            <p class="lead text-dark">
+              BlueDucks Ltd operates on two powerful tracks: delivering cutting-edge technology solutions for businesses and nurturing the next generation of tech professionals through our comprehensive academy.
+            </p>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-lg-6 mb-4">
+            <div class="card border-0 shadow-sm h-100 service-card">
+              <div class="card-body p-4 text-center">
+                <div class="service-icon">
+                  <span class="icon-briefcase"></span>
+                </div>
+                <h3 class="mb-3">Project Development</h3>
+                <p class="text-dark">
+                  Custom technology solutions that transform businesses. From concept to deployment, we build scalable, innovative systems that drive growth and efficiency.
+                </p>
+                <a href="#projects" class="btn btn-outline-primary">Explore Projects</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-6 mb-4">
+            <div class="card border-0 shadow-sm h-100 service-card">
+              <div class="card-body p-4 text-center">
+                <div class="service-icon">
+                  <span class="icon-graduation-cap"></span>
+                </div>
+                <h3 class="mb-3">Tech Academy</h3>
+                <p class="text-dark">
+                  Comprehensive training programs designed to equip individuals with industry-relevant skills. From beginner to advanced, we nurture tech talent for the future.
+                </p>
+                <a href="#academy" class="btn btn-outline-primary">Explore Academy</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project Development Services -->
+    <div class="site-section bg-light" id="projects">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center mb-5">
+            <span class="sub-title">Project Development</span>
+            <h2 class="font-weight-bold text-black mb-4">Technology Solutions That Scale</h2>
+            <p class="lead text-dark">
+              We partner with businesses to create robust, scalable technology solutions that drive digital transformation and competitive advantage.
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card border-0 shadow-sm h-100 service-card">
+              <div class="card-body p-4">
+                <div class="service-icon">
+                  <span class="icon-monitor"></span>
+                </div>
+                <h4 class="mb-3">Web Development</h4>
+                <p class="text-dark mb-3">
+                  Create powerful, responsive websites and web applications that engage users and drive business results.
+                </p>
+                <ul class="list-unstyled text-dark small">
+                  <li>• Custom Website Development</li>
+                  <li>• E-commerce Solutions</li>
+                  <li>• Content Management Systems</li>
+                  <li>• Progressive Web Apps (PWAs)</li>
+                  <li>• API Development & Integration</li>
+                </ul>
+                <div class="mt-3">
+                  <span class="tech-badge">React</span>
+                  <span class="tech-badge">Angular</span>
+                  <span class="tech-badge">Node.js</span>
+                  <span class="tech-badge">Python</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card border-0 shadow-sm h-100 service-card">
+              <div class="card-body p-4">
+                <div class="service-icon">
+                  <span class="icon-mobile"></span>
+                </div>
+                <h4 class="mb-3">Mobile Development</h4>
+                <p class="text-dark mb-3">
+                  Build native and cross-platform mobile applications that provide seamless user experiences across all devices.
+                </p>
+                <ul class="list-unstyled text-dark small">
+                  <li>• iOS & Android Development</li>
+                  <li>• Cross-Platform Solutions</li>
+                  <li>• Mobile App UI/UX Design</li>
+                  <li>• App Store Optimization</li>
+                  <li>• Maintenance & Updates</li>
+                </ul>
+                <div class="mt-3">
+                  <span class="tech-badge">Flutter</span>
+                  <span class="tech-badge">React Native</span>
+                  <span class="tech-badge">Swift</span>
+                  <span class="tech-badge">Kotlin</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card border-0 shadow-sm h-100 service-card">
+              <div class="card-body p-4">
+                <div class="service-icon">
+                  <span class="icon-cpu"></span>
+                </div>
+                <h4 class="mb-3">AI & Machine Learning</h4>
+                <p class="text-dark mb-3">
+                  Implement intelligent systems that automate processes, analyze data, and provide predictive insights for your business.
+                </p>
+                <ul class="list-unstyled text-dark small">
+                  <li>• Machine Learning Models</li>
+                  <li>• Natural Language Processing</li>
+                  <li>• Computer Vision Solutions</li>
+                  <li>• Predictive Analytics</li>
+                  <li>• AI Integration & Deployment</li>
+                </ul>
+                <div class="mt-3">
+                  <span class="tech-badge">TensorFlow</span>
+                  <span class="tech-badge">PyTorch</span>
+                  <span class="tech-badge">OpenAI</span>
+                  <span class="tech-badge">Scikit-learn</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card border-0 shadow-sm h-100 service-card">
+              <div class="card-body p-4">
+                <div class="service-icon">
+                  <span class="icon-cloud"></span>
+                </div>
+                <h4 class="mb-3">Cloud Solutions</h4>
+                <p class="text-dark mb-3">
+                  Migrate to the cloud and leverage scalable infrastructure for improved performance, security, and cost-effectiveness.
+                </p>
+                <ul class="list-unstyled text-dark small">
+                  <li>• Cloud Migration Services</li>
+                  <li>• Infrastructure as Code</li>
+                  <li>• DevOps & CI/CD Pipelines</li>
+                  <li>• Cloud Security Implementation</li>
+                  <li>• Performance Optimization</li>
+                </ul>
+                <div class="mt-3">
+                  <span class="tech-badge">AWS</span>
+                  <span class="tech-badge">Azure</span>
+                  <span class="tech-badge">Docker</span>
+                  <span class="tech-badge">Kubernetes</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card border-0 shadow-sm h-100 service-card">
+              <div class="card-body p-4">
+                <div class="service-icon">
+                  <span class="icon-database"></span>
+                </div>
+                <h4 class="mb-3">Database Management</h4>
+                <p class="text-dark mb-3">
+                  Design, implement, and maintain robust database systems that ensure data integrity, performance, and scalability.
+                </p>
+                <ul class="list-unstyled text-dark small">
+                  <li>• Database Design & Architecture</li>
+                  <li>• Performance Optimization</li>
+                  <li>• Data Migration & Integration</li>
+                  <li>• Backup & Recovery Solutions</li>
+                  <li>• Database Security</li>
+                </ul>
+                <div class="mt-3">
+                  <span class="tech-badge">PostgreSQL</span>
+                  <span class="tech-badge">MongoDB</span>
+                  <span class="tech-badge">MySQL</span>
+                  <span class="tech-badge">Redis</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card border-0 shadow-sm h-100 service-card">
+              <div class="card-body p-4">
+                <div class="service-icon">
+                  <span class="icon-shield"></span>
+                </div>
+                <h4 class="mb-3">Cybersecurity</h4>
+                <p class="text-dark mb-3">
+                  Protect your digital assets with comprehensive security solutions, from vulnerability assessments to incident response.
+                </p>
+                <ul class="list-unstyled text-dark small">
+                  <li>• Security Audits & Assessments</li>
+                  <li>• Penetration Testing</li>
+                  <li>• Security Architecture Design</li>
+                  <li>• Incident Response Planning</li>
+                  <li>• Security Training & Awareness</li>
+                </ul>
+                <div class="mt-3">
+                  <span class="tech-badge">Ethical Hacking</span>
+                  <span class="tech-badge">Penetration Testing</span>
+                  <span class="tech-badge">Security Auditing</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Development Process -->
+        <div class="row mt-5">
+          <div class="col-12">
+            <h3 class="font-weight-bold text-black mb-4 text-center">Our Development Process</h3>
+            <div class="row">
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="process-step">
+                  <div class="step-number">1</div>
+                  <h5>Discovery & Planning</h5>
+                  <p class="text-dark small">We analyze your requirements, define project scope, and create detailed technical specifications.</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="process-step">
+                  <div class="step-number">2</div>
+                  <h5>Design & Architecture</h5>
+                  <p class="text-dark small">Our team designs the system architecture, user interface, and creates prototypes for validation.</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="process-step">
+                  <div class="step-number">3</div>
+                  <h5>Development & Testing</h5>
+                  <p class="text-dark small">Agile development with continuous testing ensures quality and timely delivery of your solution.</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="process-step">
+                  <div class="step-number">4</div>
+                  <h5>Deployment & Support</h5>
+                  <p class="text-dark small">We deploy your solution and provide ongoing maintenance and support to ensure optimal performance.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tech Academy Services -->
+    <div class="site-section" id="academy">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center mb-5">
+            <span class="sub-title">Tech Academy</span>
+            <h2 class="font-weight-bold text-black mb-4">Empowering the Next Generation of Tech Professionals</h2>
+            <p class="lead text-dark">
+              Our comprehensive academy programs are designed to transform beginners into industry-ready professionals through hands-on learning, real-world projects, and expert mentorship.
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card border-0 shadow-sm h-100 service-card">
+              <div class="card-body p-4">
+                <div class="service-icon">
+                  <span class="icon-code"></span>
+                </div>
+                <h4 class="mb-3">Programming & Development</h4>
+                <p class="text-dark mb-3">
+                  Master the fundamentals of programming and advance to full-stack development with modern technologies and best practices.
+                </p>
+                <ul class="list-unstyled text-dark small">
+                  <li>• Frontend Development (HTML, CSS, JavaScript)</li>
+                  <li>• Backend Development (Node.js, Python, Java)</li>
+                  <li>• Full-Stack Development</li>
+                  <li>• Database Design & Management</li>
+                  <li>• Version Control & Collaboration</li>
+                </ul>
+                <div class="mt-3">
+                  <span class="badge badge-primary">12 Weeks</span>
+                  <span class="badge badge-success">Beginner to Advanced</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card border-0 shadow-sm h-100 service-card">
+              <div class="card-body p-4">
+                <div class="service-icon">
+                  <span class="icon-mobile"></span>
+                </div>
+                <h4 class="mb-3">Mobile App Development</h4>
+                <p class="text-dark mb-3">
+                  Learn to build native and cross-platform mobile applications for iOS and Android with modern development frameworks.
+                </p>
+                <ul class="list-unstyled text-dark small">
+                  <li>• Flutter Development</li>
+                  <li>• React Native</li>
+                  <li>• iOS Development (Swift)</li>
+                  <li>• Android Development (Kotlin)</li>
+                  <li>• Mobile UI/UX Design</li>
+                </ul>
+                <div class="mt-3">
+                  <span class="badge badge-primary">10 Weeks</span>
+                  <span class="badge badge-success">Intermediate</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card border-0 shadow-sm h-100 service-card">
+              <div class="card-body p-4">
+                <div class="service-icon">
+                  <span class="icon-bar-chart"></span>
+                </div>
+                <h4 class="mb-3">Data Science & Analytics</h4>
+                <p class="text-dark mb-3">
+                  Dive into the world of data science, machine learning, and analytics to extract insights from complex datasets.
+                </p>
+                <ul class="list-unstyled text-dark small">
+                  <li>• Python for Data Science</li>
+                  <li>• Statistical Analysis & Visualization</li>
+                  <li>• Machine Learning Algorithms</li>
+                  <li>• Big Data Technologies</li>
+                  <li>• Business Intelligence</li>
+                </ul>
+                <div class="mt-3">
+                  <span class="badge badge-primary">14 Weeks</span>
+                  <span class="badge badge-success">Intermediate to Advanced</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card border-0 shadow-sm h-100 service-card">
+              <div class="card-body p-4">
+                <div class="service-icon">
+                  <span class="icon-palette"></span>
+                </div>
+                <h4 class="mb-3">UI/UX Design & Graphics</h4>
+                <p class="text-dark mb-3">
+                  Create stunning user interfaces and compelling graphics that enhance user experience and brand identity.
+                </p>
+                <ul class="list-unstyled text-dark small">
+                  <li>• User Interface Design</li>
+                  <li>• User Experience Research</li>
+                  <li>• Graphic Design Principles</li>
+                  <li>• Digital Illustration</li>
+                  <li>• Brand Identity Design</li>
+                </ul>
+                <div class="mt-3">
+                  <span class="badge badge-primary">8 Weeks</span>
+                  <span class="badge badge-success">Beginner to Intermediate</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card border-0 shadow-sm h-100 service-card">
+              <div class="card-body p-4">
+                <div class="service-icon">
+                  <span class="icon-shield"></span>
+                </div>
+                <h4 class="mb-3">Cybersecurity & Ethical Hacking</h4>
+                <p class="text-dark mb-3">
+                  Learn to protect digital assets and systems through comprehensive security practices and ethical hacking techniques.
+                </p>
+                <ul class="list-unstyled text-dark small">
+                  <li>• Network Security Fundamentals</li>
+                  <li>• Penetration Testing</li>
+                  <li>• Vulnerability Assessment</li>
+                  <li>• Incident Response</li>
+                  <li>• Security Compliance</li>
+                </ul>
+                <div class="mt-3">
+                  <span class="badge badge-primary">12 Weeks</span>
+                  <span class="badge badge-success">Intermediate to Advanced</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card border-0 shadow-sm h-100 service-card">
+              <div class="card-body p-4">
+                <div class="service-icon">
+                  <span class="icon-cloud"></span>
+                </div>
+                <h4 class="mb-3">Cloud Computing & DevOps</h4>
+                <p class="text-dark mb-3">
+                  Master cloud technologies and DevOps practices to build, deploy, and manage scalable applications in the cloud.
+                </p>
+                <ul class="list-unstyled text-dark small">
+                  <li>• AWS/Azure Cloud Platforms</li>
+                  <li>• Docker & Kubernetes</li>
+                  <li>• CI/CD Pipeline Development</li>
+                  <li>• Infrastructure as Code</li>
+                  <li>• Cloud Security</li>
+                </ul>
+                <div class="mt-3">
+                  <span class="badge badge-primary">10 Weeks</span>
+                  <span class="badge badge-success">Intermediate</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Academy Features -->
+        <div class="row mt-5">
+          <div class="col-12">
+            <h3 class="font-weight-bold text-black mb-4 text-center">Why Choose Our Academy</h3>
+            <div class="row">
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="text-center">
+                  <div class="service-icon">
+                    <span class="icon-users"></span>
+                  </div>
+                  <h5>Expert Instructors</h5>
+                  <p class="text-dark small">Learn from industry professionals with years of real-world experience in their respective fields.</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="text-center">
+                  <div class="service-icon">
+                    <span class="icon-laptop"></span>
+                  </div>
+                  <h5>Hands-On Projects</h5>
+                  <p class="text-dark small">Build real-world projects that you can showcase in your portfolio and demonstrate your skills to employers.</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="text-center">
+                  <div class="service-icon">
+                    <span class="icon-trophy"></span>
+                  </div>
+                  <h5>Industry Certification</h5>
+                  <p class="text-dark small">Receive recognized certifications upon completion that validate your skills and boost your career prospects.</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="text-center">
+                  <div class="service-icon">
+                    <span class="icon-headphones"></span>
+                  </div>
+                  <h5>Ongoing Support</h5>
+                  <p class="text-dark small">Get continued support even after graduation with career guidance and access to our alumni network.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="site-section innovation-bg text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="font-weight-bold text-white mb-4">Ready to Transform Your Future?</h2>
+            <p class="lead text-white mb-5">
+              Whether you need cutting-edge technology solutions for your business or want to advance your tech career, we're here to help you succeed.
+            </p>
+            <div class="row justify-content-center">
+              <div class="col-md-8">
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <button class="btn btn-outline-light btn-lg btn-block">Start Your Project</button>
+                    <p class="text-white small mt-2">Get a custom quote for your technology needs</p>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <button class="btn btn-light btn-lg btn-block">Enroll in Academy</button>
+                    <p class="text-white small mt-2">Begin your journey to tech excellence</p>
+                  </div>
+                </div>
+                <div class="mt-4">
+                  <button class="btn btn-outline-light btn-lg">Contact Us Today</button>
+                  <p class="text-white small mt-2">Have questions? We're here to help!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer border-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <div class="row mb-5">
+              <div class="col-md-12">
+                <h3 class="footer-heading mb-4">Navigation</h3>
+              </div>
+              <div class="col-md-6 col-lg-6">
+                <ul class="list-unstyled">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="academy.html">Academy</a></li>
+                  <li><a href="projects.html">Projects</a></li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-6">
+                <ul class="list-unstyled">
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                  <li><a href="careers.html">Careers</a></li>
+                  <li><a href="blog.html">Blog</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <div class="mb-5">
+              <h3 class="footer-heading mb-2">Subscribe Newsletter</h3>
+              <p>Stay updated with our latest innovations, tech insights, and academy announcements.</p>
+
+              <form action="#" method="post">
+                <div class="input-group mb-3">
+                  <input type="email" class="form-control border-white text-white bg-transparent"
+                    placeholder="Enter Email" aria-label="Enter Email" aria-describedby="button-addon2" />
+                  <div class="input-group-append">
+                    <button class="btn btn-primary" type="button" id="button-addon2">Subscribe</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <h3 class="footer-heading mb-4">Follow Us</h3>
+                <div>
+                  <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
+                  <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
+                  <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
+                  <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
+                  <a href="#" class="pl-3 pr-3"><span class="icon-github"></span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row pt-5 mt-5 text-center">
+          <div class="col-md-12">
+            <p>
+              Copyright &copy;
+              <script>document.write(new Date().getFullYear());</script>
+              BlueDucks Ltd. All rights reserved. | Made with <i class="icon-heart-o" aria-hidden="true"></i> by BlueDucks Team
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/main.js"></script>
+
+  <button id="backToTopBtn" class="btn btn-primary" style="
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1050;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        font-size: 18px;
+        border: none;
+      " title="Back to Top">
+    <i class="icon-chevron-up" style="font-weight: bold"></i>
+  </button>
+
+  <script>
+    // Back to top button functionality
+    window.onscroll = function() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("backToTopBtn").style.display = "block";
+      } else {
+        document.getElementById("backToTopBtn").style.display = "none";
+      }
+    };
+
+    document.getElementById("backToTopBtn").onclick = function() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    };
+  </script>
+
+</body>
+

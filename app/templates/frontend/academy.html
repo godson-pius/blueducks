@@ -1,0 +1,242 @@
+{% extends "frontend/base.html" %}
+{% block title %}Book Your Project &mdash; BlueDucks Ltd{% endblock title %}
+
+{% block body %}
+
+<!-- Hero Section -->
+<div class="site-blocks-cover overlay inner-page" style="background-image: url(static/frontend/images/techroom.jpg);"
+  data-aos="fade" data-stellar-background-ratio="0.5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-10">
+        <span class="sub-text">Learn • Grow • Excel</span>
+        <h1>BlueDucks Academy</h1>
+        <p class="lead text-white">Transform Your Career with Industry-Leading Tech Education</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Running Courses Section -->
+<div class="site-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center mb-5">
+        <span class="sub-title">Current Offerings</span>
+        <h2 class="font-weight-bold text-black mb-4">Running Courses</h2>
+        <p class="lead text-dark">
+          Join our active cohorts and start your tech journey today
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- Course 1: Full-Stack Web Development -->
+
+      {% for course in courses %}
+      <div class="col-lg-6 col-md-6 mb-4">
+        <div class="card border-0 shadow-sm h-100 course-card">
+          <div class="card-body p-4">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+              <div class="course-icon">
+                <span class="icon-code"></span>
+              </div>
+              {% if course.status %}
+              <span class="course-status status-open">Enrolling Now</span>
+              {% else %}
+              <span class="course-status status-starting">Starting soon</span>
+              {% endif %}
+            </div>
+            <h4 class="mb-3">{{ course.courseName }}</h4>
+            <p class="text-dark mb-3">
+              {{ course.courseDesc }}
+            </p>
+
+            <div class="row mb-3">
+              <div class="col-6">
+                <small class="course-detail"><strong>Duration:</strong> {{ course.courseDuration }}</small>
+              </div>
+              <div class="col-6">
+                <small class="course-detail"><strong>Start Date:</strong> {{ course.startDate }}</small>
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col-6">
+                <small class="course-detail"><strong>Schedule:</strong> {{ course.schedule }}</small>
+              </div>
+              <div class="col-6">
+                <small class="course-detail"><strong>Time:</strong> {{ course.time }}</small>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <small class="course-detail"><strong>Requirements:</strong> {{ course.requirements }}</small>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="font-weight-bold text-primary">₦{{ course.coursePrice }}</span>
+              {% if course.status %}
+              <button class="btn btn-primary enroll-btn">Enroll Now</button>
+              {% else %}
+              <button class="btn btn-primary enroll-btn" disabled>Starting soon</button>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+
+    </div>
+  </div>
+</div>
+
+<!-- Online Learning Section -->
+<div class="site-section bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center mb-5">
+        <span class="sub-title">Flexible Learning</span>
+        <h2 class="font-weight-bold text-black mb-4">Online Classes Available</h2>
+        <p class="lead text-dark">
+          Experience world-class education from anywhere with our comprehensive online learning platform
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="online-feature text-center">
+          <div class="feature-icon">
+            <span class="icon-laptop"></span>
+          </div>
+          <h4>Interactive Virtual Classes</h4>
+          <p class="mb-0">Join live sessions with real-time interaction, screen sharing, and collaborative coding
+            environments.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="online-feature text-center">
+          <div class="feature-icon">
+            <span class="icon-clock-o"></span>
+          </div>
+          <h4>Flexible Scheduling</h4>
+          <p class="mb-0">Access recorded sessions, attend live classes, and learn at your own pace with 24/7 platform
+            access.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="online-feature text-center">
+          <div class="feature-icon">
+            <span class="icon-users"></span>
+          </div>
+          <h4>Expert Mentorship</h4>
+          <p class="mb-0">Get personalized guidance from industry experts through one-on-one sessions and group
+            mentoring.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-5">
+      <div class="col-lg-6">
+        <h3 class="font-weight-bold text-black mb-4">Benefits of Online Learning</h3>
+
+        <div class="benefit-item">
+          <h5 class="mb-2"><span class="icon-check text-primary mr-2"></span>Learn from Anywhere</h5>
+          <p class="mb-0 text-dark">Access quality education from the comfort of your home or office. No geographical
+            limitations.</p>
+        </div>
+
+        <div class="benefit-item">
+          <h5 class="mb-2"><span class="icon-check text-primary mr-2"></span>Cost-Effective</h5>
+          <p class="mb-0 text-dark">Save on transportation and accommodation costs while getting the same quality
+            education.</p>
+        </div>
+
+        <div class="benefit-item">
+          <h5 class="mb-2"><span class="icon-check text-primary mr-2"></span>Recorded Sessions</h5>
+          <p class="mb-0 text-dark">Access all class recordings for revision and catch up on missed sessions anytime.
+          </p>
+        </div>
+
+        <div class="benefit-item">
+          <h5 class="mb-2"><span class="icon-check text-primary mr-2"></span>Interactive Learning</h5>
+          <p class="mb-0 text-dark">Engage in real-time discussions, collaborative projects, and hands-on coding
+            sessions.</p>
+        </div>
+
+        <div class="benefit-item">
+          <h5 class="mb-2"><span class="icon-check text-primary mr-2"></span>Career Support</h5>
+          <p class="mb-0 text-dark">Get job placement assistance, resume reviews, and interview preparation support.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="card border-0 shadow-sm">
+          <div class="card-body p-4">
+            <h4 class="mb-3">Ready to Start Your Online Journey?</h4>
+            <p class="text-dark mb-4">
+              Join thousands of students who have transformed their careers through our online programs.
+              Get started today with a free consultation session.
+            </p>
+
+            <div class="mb-4">
+              <h6 class="font-weight-bold">What you get:</h6>
+              <ul class="list-unstyled text-dark">
+                <li><i class="icon-check text-primary mr-2"></i>Access to live and recorded classes</li>
+                <li><i class="icon-check text-primary mr-2"></i>Digital course materials and resources</li>
+                <li><i class="icon-check text-primary mr-2"></i>Project-based learning assignments</li>
+                <li><i class="icon-check text-primary mr-2"></i>Certificate upon completion</li>
+                <li><i class="icon-check text-primary mr-2"></i>Lifetime access to course materials</li>
+              </ul>
+            </div>
+
+            <div class="text-center">
+              <button class="btn btn-primary btn-lg mb-3">Enroll in Online Classes</button>
+              <p class="text-muted small">Start your transformation today</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Call to Action -->
+<div class="site-section"
+  style="background-image: url('static/frontend/images/group.jpg'); background-size: cover; background-position: center; position: relative;">
+  <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.5);"></div>
+  <div class="container" style="position: relative; z-index: 2;">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="font-weight-bold text-white mb-4">Transform Your Career Today</h2>
+        <p class="lead text-white mb-5">
+          Join BlueDucks Academy and become part of the next generation of tech professionals.
+          Start your journey with industry-leading instructors and hands-on projects.
+        </p>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <button class="btn btn-light btn-lg btn-block">View All Courses</button>
+              </div>
+              <div class="col-md-6 mb-3">
+                <button class="btn btn-outline-light btn-lg btn-block">Schedule Consultation</button>
+              </div>
+            </div>
+            <div class="mt-4">
+              <p class="text-white">
+                <span class="icon-phone mr-2"></span>
+                Call us at +2348062704494 or email blueducksltd@gmail.com
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock body %}

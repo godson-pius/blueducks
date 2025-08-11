@@ -1,0 +1,280 @@
+{% extends "frontend/base.html" %}
+{% block title %}Book Your Project &mdash; BlueDucks Ltd{% endblock title %}
+
+{% block body %}
+
+<div class="site-blocks-cover overlay inner-page" style="background-image: url(static/frontend/images/writing.jpg);"
+  data-aos="fade" data-stellar-background-ratio="0.5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-10">
+        <span class="sub-text">Start Your Journey • Book Your Project</span>
+        <h1>Book Your Project</h1>
+        <p class="lead text-white">Transform Your Ideas into Digital Reality</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Introduction Section -->
+<div class="intro-section">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 mb-5 mb-lg-0">
+        <img src="static/frontend/images/cropman.jpg" alt="BlueDucks Ltd Project Booking" class="img-fluid intro-image">
+      </div>
+      <div class="col-lg-6">
+        <span class="sub-title">Ready to Start?</span>
+        <h2 class="font-weight-bold text-black mb-4">Let's Bring Your Vision to Life</h2>
+        <p class="text-dark mb-4">
+          At BlueDucks Ltd, we believe every great project starts with a conversation. Whether you have a fully
+          formed concept or just a spark of an idea, we're here to help you transform it into a powerful digital
+          solution.
+        </p>
+        <p class="text-dark mb-4">
+          Our experienced team is ready to guide you through every step of the development process, from initial
+          consultation to final deployment and beyond. Take the first step today by booking your project with us.
+        </p>
+
+        <div class="office-location">
+          <h5 class="mb-3"><span class="icon-location-pin mr-2"></span>Visit Our Office</h5>
+          <p class="text-dark mb-0">
+            <strong>Address:</strong> No. 10 Ajali Crescent, Independence Layout, Enugu, Nigeria
+          </p>
+          <p class="text-dark mt-2 mb-0">
+            You can visit us in person for a detailed consultation, or simply book your project online using the
+            form below.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Booking Form Section -->
+<div class="booking-form-section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="booking-form">
+          <div class="text-center mb-4">
+            <h2 class="font-weight-bold text-black mb-3">Book Your Project</h2>
+            <p class="text-dark">Fill out the form below to get started with your project booking</p>
+          </div>
+
+          <div class="fee-notice">
+            <h5 class="mb-2"><span class="icon-info mr-2"></span>Booking Fee Information</h5>
+            <p class="mb-0">
+              <strong>A refundable booking fee of $2 is required</strong> to secure your project slot. This fee
+              helps us avoid fake or spam bookings and ensures serious inquiries. The fee will be fully refunded
+              upon project completion.
+            </p>
+          </div>
+
+          <form id="bookingForm" action="" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="fullName">Full Name <span class="required">*</span></label>
+                  <input type="text" class="form-control" id="fullName" name="fullName" required>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="email">Email Address <span class="required">*</span></label>
+                  <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="phone">Phone Number <span class="required">*</span></label>
+                  <input type="tel" class="form-control" id="phone" name="phone" required>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="secondPhone">Second Phone Number <span class="text-muted">(Optional)</span></label>
+                  <input type="tel" class="form-control" id="secondPhone" name="secondPhone">
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="address">Full Address <span class="required">*</span></label>
+              <textarea class="form-control" id="address" name="address" rows="3" required
+                placeholder="Enter your complete address including city, state, and country"></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="description">Project Description Document <span class="required">*</span></label>
+              <input type="file" class="form-control-file" id="description" name="description"
+                accept=".pdf,.doc,.docx,.txt" required>
+              <small class="form-text text-muted">
+                Please upload a PDF or document file containing your project description, requirements, and
+                specifications.
+              </small>
+            </div>
+
+            <div class="form-group">
+              <label for="details">Additional Project Details <span
+                  class="text-muted">(Optional)</span></label>
+              <textarea class="form-control" id="details" name="details" rows="5"
+                placeholder="Please provide any additional information about your project, specific requirements, timeline expectations, or questions you might have..."></textarea>
+            </div>
+
+            <div class="form-group">
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="agreeTerms" name="agreeTerms" required>
+                <label class="custom-control-label" for="agreeTerms">
+                  I agree to the <strong>$2 refundable booking fee</strong> and understand that this fee will be
+                  refunded upon project completion. I confirm that all information provided is accurate.
+                </label>
+              </div>
+            </div>
+
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary btn-lg px-5">
+                <span class="icon-paper-plane mr-2"></span>Submit Booking Request
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Response Information Section -->
+<div class="site-section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="response-info">
+          <div class="text-center">
+            <h4 class="mb-3"><span class="icon-clock-o mr-2"></span>What Happens Next?</h4>
+            <p class="text-dark mb-4">
+              <strong>Expect a response within 24 hours!</strong> Our project management team will review your
+              submission and get back to you with:
+            </p>
+
+            <div class="row text-left">
+              <div class="col-md-6">
+                <ul class="list-unstyled">
+                  <li class="mb-2">• Initial project assessment</li>
+                  <li class="mb-2">• Timeline estimates</li>
+                  <li class="mb-2">• Cost breakdown</li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <ul class="list-unstyled">
+                  <li class="mb-2">• Technology recommendations</li>
+                  <li class="mb-2">• Next steps and milestones</li>
+                  <li class="mb-2">• Scheduling consultation call</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Additional Information Section -->
+<div class="site-section bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center mb-5">
+        <h2 class="font-weight-bold text-black mb-4">Why Book With BlueDucks Ltd?</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 mb-4">
+        <div class="card border-0 shadow-sm h-100">
+          <div class="card-body text-center p-4">
+            <span class="icon-shield display-4 text-primary mb-3"></span>
+            <h5 class="mb-3">Secure & Reliable</h5>
+            <p class="text-dark">Your project and personal information are protected with enterprise-level security
+              measures.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card border-0 shadow-sm h-100">
+          <div class="card-body text-center p-4">
+            <span class="icon-users display-4 text-primary mb-3"></span>
+            <h5 class="mb-3">Expert Team</h5>
+            <p class="text-dark">Work with skilled professionals who have delivered 50+ successful projects across
+              various industries.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card border-0 shadow-sm h-100">
+          <div class="card-body text-center p-4">
+            <span class="icon-trophy display-4 text-primary mb-3"></span>
+            <h5 class="mb-3">Quality Guaranteed</h5>
+            <p class="text-dark">We maintain a 99% client satisfaction rate with ongoing support and maintenance
+              services.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Options Section -->
+<div class="site-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center mb-5">
+        <h2 class="font-weight-bold text-black mb-4">Need Help or Have Questions?</h2>
+        <p class="lead text-dark">Our team is here to assist you every step of the way</p>
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col-md-4 mb-4">
+        <div class="p-4">
+          <span class="icon-phone display-4 text-primary mb-3"></span>
+          <h5 class="mb-3">Call Us</h5>
+          <p class="text-dark">
+            <strong>+2348062704494</strong><br>
+            Mon - Fri: 9AM - 6PM
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="p-4">
+          <span class="icon-envelope display-4 text-primary mb-3"></span>
+          <h5 class="mb-3">Email Us</h5>
+          <p class="text-dark">
+            <strong>blueducksltd@gmail.com</strong><br>
+            We respond within 24 hours
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="p-4">
+          <span class="icon-location-pin display-4 text-primary mb-3"></span>
+          <h5 class="mb-3">Visit Us</h5>
+          <p class="text-dark">
+            <strong>No. 10 Ajali Crescent</strong><br>
+            Independence Layout, Enugu
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% if messages %}
+  <script>
+    alert('Booking was successful!')
+  </script>
+{% endif %}
+
+{% endblock body %}
